@@ -1,0 +1,556 @@
+/* 
+
+    Project 4
+    Name: Maitri Patel
+    Date: 23-08-11
+    Description: Project 4 styles css
+	
+ */
+
+body{
+    background-image: url(imagebackground.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover; 
+}
+
+#Maintext{
+    color:rgb(0, 3, 5);
+    font-family: 'Baloo Paaji', cursive;;
+    font-size: 80px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+@media (max-width: 550px) {
+    #Maintext {
+        font-size: 25px; 
+    }
+}
+
+#navigation { 
+  text-align: right;
+  padding: 10px;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  
+}
+
+#navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navigation li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+#navigation a {
+    color: #4359e7;
+    text-decoration: none;
+    padding: 2px ;
+}
+
+#menu li:hover {
+  background-color: #d95a8f;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  .bar:nth-child(1) {
+    top: 0;
+  }
+  
+  .bar:nth-child(2) {
+    top: 8px;
+  }
+  
+  .bar:nth-child(3) {
+    top: 16px;
+  }
+  
+  /* Hamburger icon animation when active */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  @media (min-width: 551px) {
+    #navigation li {
+      font-size: 25px; /* Increase font size for larger screens */
+    }
+  
+    .hamburger {
+      width: 40px; /* Increase width for larger screens */
+      height: 80px; /* Increase height for larger screens */
+    }
+  
+    .bar {
+      height: 5px; /* Adjust bar height for larger screens */
+    }
+
+    #navigation a {
+      color: #4359e7;
+      text-decoration: none;
+      padding: 10px ;
+  }
+  }
+
+  /* index html css */
+  .image1 {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  #section2 {
+    float: right;
+    position: relative;
+    left: -150px;
+    top:-35px;
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+  .section2-a {
+    float: right;
+    position: absolute;
+    right: 20px; /* Adjust the distance from the right side */
+    top: 49%;
+    left: 45%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .section2-b {
+    float: right;
+    position: absolute;
+    right: 20px; /* Adjust the distance from the right side */
+    top: 79%;
+    left: 45%;
+    font-size: 30px;
+  }
+  
+  #section3 {
+    padding: 2px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  .section3-a,
+  .section3-b,
+  .section3-c {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+  .section3-a {
+    font-size: 25px;
+    color: #c00b56;
+  }
+  
+  #section3-d {
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  .section3-e {
+    margin-top: -10px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .foot {
+    width: 1400px;
+    height: 650px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  #section4 {
+    font-size: 36px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Media Query for screens with width up to 480px */
+  @media (max-width: 550px) {
+    #section2,
+    .section2-a,
+    .section2-b,
+    #section3,
+    .section3-a,
+    .section3-b,
+    .section3-c,
+    #section3-d,
+    .section3-e,
+    .foot,
+    #section4 {
+      /* left: auto; Reset the left positioning for responsiveness */
+      text-align: center; /* Center-align content on smaller screens */
+    }
+  
+    .image1 {
+      max-width: 100%; /* Make images responsive */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    #section2 {
+      font-size: 20px;
+      position: relative;
+      left:1px;
+      top: 7px;
+      font-size: 15px;
+    }
+
+    .section2-a {
+      font-size: 9px;
+      left:195px;
+      top:110px;
+    }
+
+    .section2-b{
+      font-size: 9px;
+      left:49%;
+      top:20%;
+      padding-right: 9px;
+    }
+  
+    #section3,
+    #section3-d {
+      font-size: 17px;
+    }
+    .section3-a{
+      font-size: 11px;
+
+    }
+  
+    .section3-b,
+    .section3-c,
+    .section3-e {
+      font-size: 10px;
+    }
+  
+  
+    .section3-e {
+      top: 5%;
+    }
+  
+    .foot {
+      width: 370px;
+      height: 250px;
+      border-radius: 20px;
+    }
+  
+    #section4 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 550px) {
+    .image1 {
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    }
+  }
+
+/* css of rides  */
+  #Intro1 {
+    font-size: 3em;
+    padding: 2%;
+    margin-bottom: 5%;
+    font-family: cursive;
+    color: rgb(7, 142, 154);
+    text-align: center;
+  }
+  
+  /* Ride Container */
+  #image-heading-container1,
+  #image-heading-container2,
+  #image-heading-container3,
+  #image-heading-container4,
+  #image-heading-container5 {
+    margin: 5% auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 8px rgba(206, 166, 166, 0.1);
+    width: 90%;
+  }
+
+  /* Ride Image */
+  .ride1,
+  .ride2,
+  .ride3,
+  .ride4,
+  .ride5 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Ride Heading */
+  .heading1,
+  .heading2,
+  .heading3,
+  .heading4,
+  .heading5 {
+    font-size: 2.9em;
+    font-family: cursive;
+    margin-top: 5%;
+  }
+  
+  /* Ride Paragraph */
+  .para1,
+  .para2,
+  .para3,
+  .para4,
+  .para5 {
+    font-size: 1.9em;
+    margin-top: 5%;
+  }
+  
+  /* Media Query for screens with width up to 480px */
+  @media (max-width: 550px) {
+    #Intro1 {
+      font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+  
+    .ride1,
+    .ride2,
+    .ride3,
+    .ride4,
+    .ride5 {
+      max-width: 100%; /* Make images responsive */
+      height: auto;
+    }
+  
+    .heading1,
+    .heading2,
+    .heading3,
+    .heading4,
+    .heading5 {
+      font-size: 1em; /* Adjust heading font size for smaller screens */
+    }
+  
+    .para1,
+    .para2,
+    .para3,
+    .para4,
+    .para5 {
+      font-size: 0.8em; /* Adjust paragraph font size for smaller screens */
+    }
+  }
+  
+#contact{
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}  
+
+@media (min-width: 550px) {
+  #contact {
+    font-size: 25px; 
+    padding:20px ;
+  }
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    background-color: #f5f5f5;
+    color: #333; 
+  }
+  
+  .error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #2c3846;
+  }
+  
+  button[type="reset"] {
+    background-color: #4e3c3c;
+    margin-left: 10px;
+  }
+
+  
+
+/* Base styles for all resolutions */
+#head {
+  font-size: 14px;
+  padding: 2px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  color: rgb(7, 142, 154);
+}
+
+.service1,
+.service2,
+.service3 {
+  font-size: 17px;
+  font-family: cursive;
+  padding-left: 1%; /* Use percentage for padding */
+}
+
+.desc1,
+.desc2,
+.desc3 {
+  font-size: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 1%; /* Use percentage for padding */
+  margin-top: 5px; /* Add some margin for separation */
+}
+
+.photo1,
+.photo2,
+.photo3 {
+  width:240px ; /* Ensure images don't overflow */
+  height:200px ; /* Maintain aspect ratio */
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(206, 166, 166, 0.1); 
+  padding-left: 1%; /* Use percentage for padding */
+  margin-top: 5px; /* Add some margin for separation */
+}
+
+/* Media Query for screens larger than 480px (Desktop view) */
+@media (min-width: 550px) {
+  .service1,
+  .service2,
+  .service3 {
+    font-size: 25px; /* Increase font size for larger screens */
+  }
+
+  #head{
+    font-size: 30px;
+  }
+
+  .desc1,
+  .desc2,
+  .desc3 {
+    font-size: 22px; /* Increase font size for larger screens */
+  }
+
+  .photo1,
+  .photo2,
+  .photo3 {
+    width: 600px; /* Keep the width for desktop view */
+    height: 520px;
+  }
+}
+
+/* css of footer */
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: #2c2a2a;
+  font-weight: bold;
+  padding: 0px;
+ 
+}
+
+@media (min-width: 550px) {
+  .footer-links a {
+    font-size: 25px;
+    
+  }
+}
+
+.last{
+  text-align: center;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+a{
+  color: #007bff;
+}
+
+
+

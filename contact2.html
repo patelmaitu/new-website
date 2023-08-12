@@ -1,0 +1,87 @@
+<!--------w-----------
+  
+    Project 4
+    Name: Maitri Patel
+    Date: 23-08-11
+    Description: Project 4 contact2 HTML 
+	
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss Water World</title>
+    <link rel = "stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+      <main>
+      <div id="firstsection">
+        <!-- Header -->
+        <h1 id="Maintext">Bliss Water World</h1>
+
+        <p id="contact">For  to reserve tickets contact us by providing Name , Contact , E-mail and others details you want to add  </p>
+
+        <!-- Navigation Bar-->
+        <nav id="navigation">
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rides.html">Rides</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+      <form id="contactform" action="index.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-message" id="name-error">Please enter your name</div>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+        <div class="error-message" id="phone-error">Please enter a 10-digit phone number</div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="email-error">Please enter a valid email address</div>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+        <div class="error-message" id="comments-error">Please enter your comments</div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    </main>
+
+    
+
+     <!-- Footer Section -->
+     <footer>
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rides.html">Rides</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact2.html">Contact</a></li>
+        </ul>
+        <p class="last">For more Details try to contact at <a>@blisswaterworld.com</a> </p>
+      </div>
+    </footer>
+    
+       
+
+
+      <script src="validation.js"></script> 
+    </body>
+</html>
